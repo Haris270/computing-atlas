@@ -1,4 +1,6 @@
 import React, {useState } from "react";
+import {Link} from "react-router-dom"
+
 
 function Navbar(){
     const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -10,7 +12,15 @@ function Navbar(){
     return(
         <>
             <nav className="navbar">
-                <h1>Computing Atlas</h1>
+                
+                <Link to='/' className="link-component">
+                <div className="navbar-logo">
+                    <h3>The<br/>
+                        Computing<br/> 
+                        Atlas</h3>
+                </div>
+                </Link>
+                
             </nav>
         </>
     );
