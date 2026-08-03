@@ -1,19 +1,25 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
+// import { useState } from 'react'
+import {BrowserRouter, Route, Routes} from "react-router-dom";
 import './App.css'
 import Navbar from './components/Navbar'
-import Hero from './components/Hero'
+// import Hero from './components/Hero'
+// import HistorySection from './components/HistorySection'
+import Home from './pages/Home'
+import Timeline from "./pages/Timeline";
 
 function App() {
-  const [count, setCount] = useState(0)
+  //const [count, setCount] = useState(0)
 
   return(
-    <>
-      <Navbar/>
-      <Hero/>
-    </>
+    
+      <BrowserRouter>
+        <Navbar/>
+        <Routes>
+          <Route path='/' element={<Home/>}/>
+          <Route path='/timeline' element={<Timeline/>}/>
+        </Routes>
+      </BrowserRouter>
+
   )
 }
 //   return (
