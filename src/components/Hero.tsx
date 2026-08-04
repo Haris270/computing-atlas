@@ -1,5 +1,5 @@
 //import React from "react";
-import atlas from "../assets/images/atlas-plain2.png"
+import atlas from "../assets/images/atlas-plain3.png"
 
 function Hero(){
     return(
