@@ -6,12 +6,12 @@ function HistorySection(){
     return(
         <>
         <section className="main-sect">
-        <div className="history-sect container">
-            <div className="history-left">
+        <div className="indiv-sect container">
+            <div className="indiv-sect-left">
                 <h1 className="section-title">History Of Computing</h1>
                 <img src={jobsWoz} alt="article-img"/>
             </div>
-            <div className="history-right">
+            <div className="indiv-sect-right">
                 <h1>Learn about the Greats</h1>
                 <p className="main-p">Stroll through the evolution of computers and learn about the pioneers who 
                                       played important roles in this journey.
