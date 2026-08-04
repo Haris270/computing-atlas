@@ -4,7 +4,7 @@ import { timeline } from "../data/timeline"
 function Timeline(){
     return(
     <section className="timeline-sect">
-        <div className="timeline-header">
+        <div className="page-header">
             
             <h1 className="page-heading all-text">Computing - A Timeline</h1>
         </div>
