@@ -1,5 +1,7 @@
-import React, {useState } from "react";
+import {useState } from "react";
 import {Link} from "react-router-dom"
+import { IoMdMenu } from "react-icons/io";
+import { FaTimes } from "react-icons/fa";
 
 
 function Navbar(){
@@ -20,6 +22,23 @@ function Navbar(){
                         Atlas</h3>
                 </div>
                 </Link>
+
+                <div className="menu-icon" onClick={toggleMenu}>
+                {isMenuOpen ? <FaTimes className='ham-menu'/> : <IoMdMenu className='ham-menu'/>}
+            </div>
+
+
+            <div className={`nav-menu ${isMenuOpen ? 'open' : ''}`}>
+
+                <ul className='nav-links'>
+                    <li><Link to={'/timeline'} onClick={toggleMenu} className='menu-options'>Timeline</Link></li>
+    
+                    <li><Link to={'algorithm'} onClick={toggleMenu} className='menu-options'>Algorithms</Link></li>
+  
+                    {/* <li><Link to={'/'} onClick={toggleMenu} className='menu-options'>Contact</Link></li> */}
+                </ul>
+
+            </div>
                 
             </nav>
         </>
