@@ -4,7 +4,8 @@ import engine from "../assets/images/babbage-engine.jpg"
 import hollerith from "../assets/images/hollerith-small.jpg"
 import tabulator from "../assets/images/tabulator.webp"
 import turing from "../assets/images/turing-smaller.jpg"
-import vannevar from "../assets/images/vannevar-bush.jpg"
+import vannevar from "../assets/images/v-bush.jpg"
+import notes from "../assets/images/ada-noteg.jpg"
 
 
 export const timeline = [
@@ -43,13 +44,17 @@ export const timeline = [
             {
                 src: ada,
                 alt: "Ada Lovelace"
+            },
+            {
+                src:notes,
+                alt: "Ada Lovelace's Notes"
             }
         ]
     },
 
     {
         year: "1890",
-        location: "U.S.A 🇺🇸",
+        location: "United States of America 🇺🇸",
         events: [
             "Herman Hollerith develops an electromagnetical tabulating machine for punched cards to automate 1890's census",
             "It was the first major use of electrical circuits to process information",
@@ -71,7 +76,7 @@ export const timeline = [
 
     {
         year: "1931",
-        location: "U.S.A 🇺🇸",
+        location: "United States of America 🇺🇸",
         events: [
             "Vannevar Bush, an MIT engineering Professor, builds the Differential Analyzer, world's first analog electrical-mechanical computer",
             "The Differential Analyzer (size of a small bedroom) could solve equations containing 18 variables",
