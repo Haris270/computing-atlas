@@ -9,13 +9,14 @@ function Timeline(){
             <h1 className="page-heading all-text">Computing - A Timeline</h1>
         </div>
 
-        {timeline.map((period) => (
+        {timeline.map((period, index) => (
             <TimelineBlock
             key={period.year}
             year={period.year}
             location={period.location}
             events={period.events}
             images={period.images}
+            reverse = {index % 2 !== 0}
             />
         ))}
     </section>
