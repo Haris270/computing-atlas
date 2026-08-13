@@ -240,8 +240,14 @@ body {
   border-bottom: 2px solid;
 }
 
+.introduction h1{
+  font-family: "Poppins", serif;
+  /* color: #953813; */
+  color: darkgreen;
+}
 
 .introduction p{
+  font-family: "Archivo", sans-serif;
   font-size: 1.25rem;
   margin-bottom: 1.5rem;
   line-height: 1.6;
