@@ -1,6 +1,6 @@
-import floyd from "../assets/images/r-floyd.jpg"
+import floyd from "../assets/images/floyd-bg.png"
 import euclid from "../assets/images/euclid.jpg"
-import dijkstra from "../assets/images/dijkstra.jpeg"
+import dijkstra from "../assets/images/djk-n.png"
 
 
 export const algorithm = [
