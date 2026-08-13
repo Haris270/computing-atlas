@@ -8,7 +8,7 @@ function Algorithms(){
             <section className="algorithm-sect">
                 <section className="page-top">
                 {/* <h6>Last Updated: August 3rd 2026</h6> */}
-                <h1 className="page-heading all-text"> Algorithms and their Creators</h1>
+                <h1 className="algo-heading all-text"> Algorithms and their Creators</h1>
                 </section>
                 <section className="all-algo-sect">
                 {algorithm.map((card) => (
