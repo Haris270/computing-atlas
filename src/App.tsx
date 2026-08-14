@@ -5,6 +5,7 @@ import Navbar from './components/Navbar'
 import Home from './pages/Home'
 import Timeline from "./pages/Timeline";
 import Algorithms from "./pages/Algorithms";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   //const [count, setCount] = useState(0)
@@ -13,6 +14,7 @@ function App() {
     
       <BrowserRouter>
         <Navbar/>
+        <ScrollToTop/>
         <Routes>
           <Route path='/' element={<Home/>}/>
           <Route path='/timeline' element={<Timeline/>}/>
