@@ -2,6 +2,7 @@ import {useState } from "react";
 import {Link} from "react-router-dom"
 import { IoMdMenu } from "react-icons/io";
 import { FaTimes } from "react-icons/fa";
+import logo from "../assets/images/n2-logo.png"
 
 
 function Navbar(){
@@ -17,6 +18,7 @@ function Navbar(){
                 
                 <Link to='/' className="link-component">
                 <div className="navbar-logo">
+                    <img className="logo-img" src={logo}/>
                     <h3>The<br/>
                         Computing<br/> 
                         Atlas</h3>
