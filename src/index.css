@@ -3,6 +3,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
 
 
 
@@ -128,6 +131,7 @@ body {
 @media (max-width: 768px) {
   .menu-icon {
     display: flex;
+    margin-right: 0.5rem;
   }
 }
 
@@ -165,9 +169,22 @@ body {
   /* padding-top: 0.8rem; */
   margin: 0;
   margin-top: 0.5em;
-
-  
 }
+
+/* .option1{
+  background-color: #4c9b93;
+  color: white;
+  font-weight: bold;
+  border-radius: 2px;
+}
+
+.option2{
+  background-color: #e92727;
+  color: white;
+  border-radius: 2px;
+  font-weight: bold;
+  margin-left: 0.5rem;
+} */
 
 @media (max-width: 768px){
   .nav-links{
@@ -184,6 +201,7 @@ body {
 
 .menu-options {     /* Horizontal Menu Option Styling*/
   font-family: "Raleway", sans-serif;
+  /* font-family: "Poppins"; */
   display: block;
   padding: 1rem;
   color: black;
@@ -194,7 +212,9 @@ body {
 }
 
 .menu-options:hover {      /* Change Color while Hovering (Horizontal Options) */
-  background-color: rgba(0, 136, 22, 0.545);
+  /* background-color: rgba(0, 136, 22, 0.545); */
+  text-decoration: underline 2px solid red;
+  text-underline-offset: 0.5rem;
 }
 
 @media (max-width: 768px){
@@ -241,13 +261,20 @@ body {
 }
 
 .introduction h1{
-  font-family: "Poppins", serif;
+  /* font-family: "Poppins", serif; */
+  /* font-family: "Archivo", serif; */
+  font-family: "Playfair Display";
   /* color: #953813; */
-  color: darkgreen;
+  color: rgb(3, 6, 60);
+  /* color: #38240D; */
+  font-weight: 600;
+  text-decoration: underline 2px solid green;
+  text-underline-offset: 0.7rem;
 }
 
 .introduction p{
   font-family: "Archivo", sans-serif;
+  /* font-family: "Antic Didone", sans-serif; */
   font-size: 1.25rem;
   margin-bottom: 1.5rem;
   line-height: 1.6;
@@ -257,10 +284,12 @@ body {
 .main-p{
   font-size: 1.5rem;
   line-height: 1.6;
+  
 }
 
 .section-title{
   font-family: "Raleway", sans-serif;
+  /* font-family: Georgia, 'Times New Roman', Times, serif; */
   font-size: 2.5rem;
   font-weight: bold;
 }
@@ -290,6 +319,11 @@ body {
   .indiv-sect-left h1{
     line-height: 1.6;
   }
+
+  .introduction p{
+    font-size: 1.0rem;
+  }
+
 }
 
 
@@ -577,5 +611,14 @@ body {
   justify-content: space-evenly;
 }
 
-/* ------------------ NewTimeline Styling ---------------- */
+/* ------------------ LazySection Styling---------------- */
+.section-hidden {
+  opacity: 0;
+  transform: translateY(40px);
+}
 
+.section-visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
